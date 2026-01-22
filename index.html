@@ -1,127 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hero Travel</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="tailwind_init.css">
-</head>
-<body>
-  <!-- header area -->
-   <header class="w-[95%] mx-auto lg:max-w-[1200px]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Travel</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tailwind_init.css" />
+  </head>
+  <body>
+    <!-- header area -->
+    <header class="w-[95%] mx-auto lg:max-w-[1200px]">
+      <nav
+        class="flex justify-between py-[30px] md:py-10 lg:py-[50px] items-center"
+      >
+        <!-- logo area -->
+        <div class="flex gap-[17px]">
+          <img src="./assets/img/logo.png" alt="" />
+          <h1
+            class="text-[24px] md:text-[30px] lg:text-[36px] text-black font-extrabold"
+          >
+            Hero<span class="text-[#FF5400]">Travel</span>
+          </h1>
+        </div>
 
-<nav class="flex justify-between py-[30px] md:py-10 lg:py-[50px] items-center">
+        <!-- nav itmes -->
+        <ul class="hidden lg:flex gap-11">
+          <li><a href="#" class="text-[18px] text-[#FF5400]">Home</a></li>
+          <li><a href="#" class="text-[18px] text-[#424247]">Packages</a></li>
+          <li>
+            <a href="#" class="text-[18px] text-[#424247]">Testimontional</a>
+          </li>
+          <li><a href="#" class="text-[18px] text-[#424247]">Blog</a></li>
+          <li><a href="#" class="text-[18px] text-[#424247]">Contact</a></li>
+        </ul>
+        <!-- hambergur menu -->
 
-  <!-- logo area -->
-   <div class="flex gap-[17px]">
-    <img src="./assets/img/logo.png" alt="">
-    <h1 class="text-[24px] md:text-[30px] lg:text-[36px] text-black font-extrabold">Hero<span class="text-[#FF5400]">Travel</span>
-    </h1>
-   </div>
+        <div class="block lg:hidden text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
 
-   <!-- nav itmes -->
-<ul class="hidden lg:flex gap-11">
-  <li><a href="#" class="text-[18px] text-[#FF5400]">Home</a></li>
-  <li><a href="#" class="text-[18px] text-[#424247]">Packages</a></li>
-  <li><a href="#" class="text-[18px] text-[#424247]">Testimontional</a></li>
-  <li><a href="#" class="text-[18px] text-[#424247]">Blog</a></li>
-  <li><a href="#" class="text-[18px] text-[#424247]">Contact</a></li>
-</ul>
-<!-- hambergur menu -->
-
-<div class="block  lg:hidden text-2xl"><i class="fa-solid fa-bars"></i></div>
-</nav>
-
-
-   </header>
-
-   <!-- main content-->
+    <!-- main content-->
     <main>
-<!-- banner area/Hero area -->
+      <!-- banner area/Hero area -->
+
+      <section
+        class="mx-auto w-[95%] lg:max-w-[1200px] py-10 md:py-[70px] lg:py-[106px] bg-[url(./assets/img/hero_banner.png)] bg-no-repeat bg-cover bg-center rounded-2xl"
+      >
+        <!-- hero main content -->
+
+        <div class="mx-auto text-center">
+          <h2
+            class="font-extrabold text-[40px] md:text-[54px] lg:text-[64px] text-[#FFFFFF]"
+          >
+            Explore Your Travel
+          </h2>
+          <p
+            class="leading-[26px] mt-6 mb-[38px] lg:mb-12 text-[#FFFFFF] max-w-[600px] mx-auto"
+          >
+            Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
+            adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+          </p>
+
+          <!-- form area -->
+          <div class="flex flex-col gap-6 lg:flex-row justify-center px-5">
+            <form action="" class="flex flex-col lg:flex-row gap-6">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Where go"
+                class="py-4 px-9 text-[16px] rounded-lg cursor-pointer bg-[#FFFFFF] text-[#131318]"
+              />
+              <!-- when select -->
+              <select
+                name=""
+                id=""
+                class="py-4 px-9 text-[16px] rounded-lg cursor-pointer bg-[#FFFFFF]"
+              >
+                <option value="">When</option>
+                <option value="after 1 day">After 1 day</option>
+                <option value="after 3 day">After 3 day</option>
+                <option value="after 7 day">After 7 day</option>
+              </select>
+
+              <!-- select type -->
+
+              <select
+                name=""
+                id=""
+                class="py-4 px-9 text-[16px] rounded-lg cursor-pointer bg-[#FFFFFF]"
+              >
+                <option value="" class="">Select Type</option>
+                <option value="trip">Trip</option>
+                <option value="tour">Tour</option>
+                <option value="family tour">Family Tour</option>
+              </select>
+            </form>
+            <button
+              class="py-4 px-9 bg-[#FF5400] text-[#FFFFFF] font-bold text-[16px] rounded-lg cursor-pointer max-w-max mx-auto lg:mx-0"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i> Find Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- popular section -->
+
+      <section
+        class="w-[95%] flex flex-col py-10 gap-[50px] lg:gap-0 md:py-[60px] lg:py-[100px] lg:flex-row mx-auto lg:max-w-[1200px] lg:justify-between lg:items-center"
+      >
+        <!-- popular tours -->
+
+        <div class="flex flex-col gap-6 max-w-[600px]">
+          <h3
+            class="text-[30px] md:text-[35px] lg:[40px] font-extrabold text-[#]"
+          >
+            Our Popular Tours
+          </h3>
+          <p class="text-[#3f3c3c] leading-[26px] text-[16px]">
+            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+            odio sit massa. Sodales dictumst nec nibh pellentesque.
+          </p>
+
+          <ul class="flex flex-col gap-6 list-disc text-[#3f3c3c]">
+            <li>
+              Tempus euismod lacus mauris dignissim quis in ultrices. Magna
+              nullam odio neque diam. Sociis erat at .
+            </li>
+            <li>
+              Adipiscing ornare pellentesque mauris volutpat tortor vitae platea
+              porta lacus. Lectus suspendisse nullam.
+            </li>
+            <li>
+              Accumsan eget et turpis praesent lorem egestas enim elit bibendum.
+              Risus at in.
+            </li>
+          </ul>
+
+          <p class="text-[#3f3c3c] text-[16px] leading-[26px]">
+            Amet consectetur. Vulputate commodo felis molestie risus ornare
+            nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+            Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus
+            semper tincidunt.
+          </p>
+
+          <!-- popular btn area -->
+
+          <div>
+            <button
+              class="py-4 px-9 bg-[#FF5400] text-[#FFFFFF] font-bold text-[16px] rounded-lg cursor-pointer"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- popular section main image-->
+        <div class="max-w-[540px] md:mx-auto lg:mx-0">
+          <img src="./assets/img/Rectangle 4.png" alt="" class="w-full" />
+        </div>
+      </section>
+
+      <!-- destination area -->
+
+      <section>
+        <!-- destination title area -->
+        <div class="max-w-[500px] mx-auto text-center">
+          <h5
+            class="text-[28px] md:text-[35px] lg:text-[40px] text-black font-extrabold mb-6"
+          >
+            Choose Your Destination
+          </h5>
+          <p class="text-[#3f3c3c] text-[16px]">
+            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+            odio sit massa. Sodales dictumst nec nibh pellentesque.
+          </p>
+        </div>
+
+        <!-- destination grid view -->
+        <div class="grid grid-cols-12 w-[95%] grid-rows-[200px_200px_200px_200px] lg:grid-rows-3 gap-6 lg:max-w-[1200px] mx-auto">
+
+          <!-- grid destination -->
+          <div class="relative col-span-6 lg:col-span-6 after:content-['Maldives'] after:absolute after:top-[50%] after:left-[50%] after:translate-x-[-50%] after:tranlate-y-[-50%] after:text-white after:font-bold after:text-[20px]"  id="1" >
+            <img src="./assets/img/Rectangle 5.png" alt="" class="w-full h-full"/>
+          </div>
+          <div class="relative col-span-6 lg:col-span-6 after:content-['Indonesia'] after:absolute after:top-[50%] after:left-[50%] after:translate-x-[-50%] after:tranlate-y-[-50%] after:text-white after:font-bold after:text-[20px]" id="2">
+            <img src="./assets/img/Rectangle 8.png" alt="" class="w-full h-full"/>
+          
+          </div>
+          <div class="relative col-span-6 lg:col-span-4 after:content-['Srilanka'] after:absolute after:top-[50%] after:left-[50%] after:translate-x-[-50%] after:tranlate-y-[-50%] after:text-white after:font-bold after:text-[20px]" id="3">
+            <img src="./assets/img/Rectangle 6.png" alt=""  class="w-full h-full"/>
+          </div>
+          <div class="relative  col-span-6 lg:col-span-5 after:content-['North_America'] after:absolute after:top-[50%] after:left-[50%] after:translate-x-[-50%] after:tranlate-y-[-50%] after:text-white after:font-bold after:text-[20px]" id="4">
+            <img src="./assets/img/Rectangle 7.png" alt="" class="w-full h-full"/>
+          </div>
+          <div class="relative col-span-6 lg:col-span-3 after:content-['Kashmir'] after:absolute after:top-[50%] after:left-[50%] after:translate-x-[-50%] after:tranlate-y-[-50%] after:text-white after:font-bold after:text-[20px]" id="5">
+            <img src="./assets/img/Rectangle 9.png" alt="" class="w-full h-full"/>
+          </div>
+          <div class="relative col-span-6 lg:col-span-5 after:content-['Bangladesh'] after:absolute after:top-[50%] after:left-[50%] after:translate-x-[-50%] after:tranlate-y-[-50%] after:text-white after:font-bold after:text-[20px]">
+            <img src="./assets/img/Rectangle 11.png" alt="" class="w-full h-full" />
+          </div>
+          <div class="relative col-span-6 lg:col-span-7 after:content-['Bandarban'] after:absolute after:top-[50%] after:left-[50%] after:translate-x-[-50%] after:tranlate-y-[-50%] after:text-white after:font-bold after:text-[20px]">
+            <img src="./assets/img/Rectangle 10.png" alt="" class="w-full h-full"/>
+          </div>
 
 
-<section class=" mx-auto w-[95%] lg:max-w-[1200px] py-10 md:py-[70px] lg:py-[106px] bg-[url(./assets/img/hero_banner.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
-
-<!-- hero main content -->
-
-<div class=" mx-auto text-center ">
-
-  <h2 class="font-extrabold text-[40px] md:text-[54px] lg:text-[64px] text-[#FFFFFF]">Explore Your Travel</h2>
-  <p  class="leading-[26px] mt-6 mb-[38px] lg:mb-12 text-[#FFFFFF] max-w-[600px] mx-auto">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
-
-<!-- form area -->
- <div class="flex flex-col gap-6 lg:flex-row justify-center px-5 ">
-
-  <form action="" class="flex flex-col lg:flex-row gap-6">
-<input type="text" name="" id="" placeholder="Where go" class="py-4 px-9 text-[16px] rounded-lg cursor-pointer bg-[#FFFFFF] text-[#131318]">
-<!-- when select -->
-<select name="" id="" class="py-4 px-9 text-[16px] rounded-lg cursor-pointer bg-[#FFFFFF]">
-<option value="">When</option>
-  <option value="after 1 day">After 1 day</option>
-  <option value="after 3 day">After 3 day</option>
-  <option value="after 7 day">After 7 day</option>
-</select>
-
-<!-- select type -->
-
-<select name="" id="" class="py-4 px-9 text-[16px] rounded-lg cursor-pointer bg-[#FFFFFF] ">
-  <option value="" class="">Select Type</option>
-  <option value="trip">Trip</option>
-  <option value="tour">Tour</option>
-  <option value="family tour">Family Tour</option>
-
-</select>
-
-  </form>
-  <button class="py-4 px-9 bg-[#FF5400] text-[#FFFFFF] font-bold text-[16px] rounded-lg cursor-pointer max-w-max mx-auto lg:mx-0"><i class="fa-solid fa-magnifying-glass"></i>  Find Now</button>
- </div>
-
-</div>
-
-</section>
-
-
-<!-- popular section -->
-
-<section class="w-[95%] flex flex-col py-10 gap-[50px] lg:gap-0 md:py-[60px] lg:py-[100px] lg:flex-row mx-auto lg:max-w-[1200px] lg:justify-between lg:items-center">
-
-  <!-- popular tours -->
-
-  <div class="flex flex-col gap-6 max-w-[600px]">
-<h3 class="text-[30px] md:text-[35px] lg:[40px] font-extrabold text-[#]">Our Popular Tours</h3>
-<p class="text-[#3f3c3c] leading-[26px] text-[16px]">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
-
-<ul class="flex flex-col gap-6 list-disc text-[#3f3c3c]">
-  <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</li>
-  <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
-  <li> Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
-</ul>
-
-<p class="text-[#3f3c3c] text-[16px] leading-[26px]">Amet consectetur. Vulputate commodo felis molestie risus 
-ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
-
-<!-- popular btn area -->
-
-<div> <button class="py-4 px-9 bg-[#FF5400] text-[#FFFFFF] font-bold text-[16px] rounded-lg cursor-pointer">Read More</button></div>
-  </div>
-
-  <!-- popular section main image-->
-   <div class="max-w-[540px] md:mx-auto  lg:mx-0"> <img src="./assets/img/Rectangle 4.png" alt="" class="w-full"></div>
-
-</section>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </section>
     </main>
 
     <!-- footer area -->
 
     <footer></footer>
-</body>
+  </body>
 </html>
